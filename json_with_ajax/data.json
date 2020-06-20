@@ -1,0 +1,19 @@
+{
+    "details":{
+        "name":"Sanghavi Sunkari",
+        "mobile":"1020304050",
+        "email":"sunkarisanghavi@gmail.com"
+    },
+    "mydata":[
+        { 
+            "name":"Sunkari Sanghavi",
+            "mobile":"1234567890",
+            "email":"s99@gmail.com"
+        },
+        {
+            "name":"Sanghavi",
+            "mobile":"9876543210",
+            "email":"sunkaris@gmail.com"
+        }
+    ]
+}

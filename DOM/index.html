@@ -1,0 +1,208 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>HTML PAGE</title>
+	<style>
+	    table,td,th
+	   {
+         border-collapse: collapse;
+         text-align: center;
+	    }
+	    th
+	    {
+	    	background-color: #C7D5D5;
+	    }
+	    .mainsection
+		{
+			width:100%;
+			margin: 20px 40px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.artical1
+		{
+			height:30%;
+			width:20%;
+			text-align: center;
+			background-color: aquamarine;
+			box-shadow: 2px 2px 2px 2px;
+			margin: 20px;
+		}
+		.sec1
+		{
+			width:65%;
+			margin:20px;
+			background-color: aquamarine;
+		    box-shadow: 2px 2px 2px 2px;
+		    padding: 15px;
+		}
+
+    </style>
+</head>
+<body id="main">
+<script type="text/javascript">
+		//var body=document.getElementById("root");
+		var body=document.querySelector("#main");
+		console.log(body);
+        
+        var main1=document.createElement("section");
+		main1.classList.add("mainsection");
+		body.appendChild(main1);
+
+		var artical1=document.createElement("article");
+		artical1.setAttribute("class","artical1");
+        main1.appendChild(artical1);
+
+        var image=document.createElement("img");
+        image.src="C:/Users/hp/Desktop/React-js/DOM/1.png";
+        image.alt="profile image";
+        image.width="100";
+        image.height="100";
+        artical1.appendChild(image);
+
+        var hr=document.createElement("hr");
+        artical1.appendChild(hr);
+
+        var name1=document.createElement("h2");
+        name1.textContent="Sanghavi Sunkari";
+        artical1.appendChild(name1);
+
+        var email1=document.createElement("p");
+        email1.textContent="sunkarisanghavi@gmail.com";
+        artical1.appendChild(email1);
+
+        var phoneno=document.createElement("p");
+        phoneno.textContent="1234567890";
+        artical1.appendChild(phoneno);
+
+        var section1=document.createElement("section");
+        section1.classList.add("sec1");
+        main1.appendChild(section1);
+
+        var h2=document.createElement("h2");
+        h2.textContent="Career Objective";
+        section1.appendChild(h2);
+
+        var p=document.createElement("p");
+        p.textContent="To utilise my technical skills in a company which leads to the growth in my career";
+        section1.appendChild(p);
+
+        var hr=document.createElement("hr");
+        section1.appendChild(hr);
+
+        var h21=document.createElement("h2");
+        h21.textContent="Educational Details";
+        section1.appendChild(h21);
+
+        var table=document.createElement("table");
+        table.style.width="800px";
+        section1.appendChild(table);
+
+        var tr1=document.createElement("tr");
+        table.appendChild(tr1);
+        var th1=document.createElement("th");
+        th1.textContent="#";
+        th1.height="40";
+        tr1.appendChild(th1);
+        var th2=document.createElement("th");
+        th2.textContent="Course";
+        tr1.appendChild(th2);
+        var th3=document.createElement("th");
+        th3.textContent="Institute/College";
+        tr1.appendChild(th3);
+        var th4=document.createElement("th");
+        th4.textContent="GPA/Percentage";
+        tr1.appendChild(th4);
+
+        var tr2=document.createElement("tr");
+        table.appendChild(tr2);
+        var td1=document.createElement("td");
+        td1.textContent="1";
+        td1.height="40";
+        tr2.appendChild(td1);
+        var td2=document.createElement("td");
+        td2.textContent="B.Tech";
+        tr2.appendChild(td2);
+        var td3=document.createElement("td");
+        td3.textContent="Andhra University College of Engineering";
+        tr2.appendChild(td3);
+        var td4=document.createElement("td");
+        td4.textContent="8.72 CGPA";
+        tr2.appendChild(td4);
+      
+        var tr3=document.createElement("tr");
+        table.appendChild(tr3);
+        var td1=document.createElement("td");
+        td1.textContent="2";
+        td1.height="40";
+        tr3.appendChild(td1);
+        var td2=document.createElement("td");
+        td2.textContent="Intermediate";
+        tr3.appendChild(td2);
+        var td3=document.createElement("td");
+        td3.textContent="Sri Chaitanya Junior College";
+        tr3.appendChild(td3);
+        var td4=document.createElement("td");
+        td4.textContent="97.5%";
+        tr3.appendChild(td4);
+
+        var tr4=document.createElement("tr");
+        table.appendChild(tr4);
+        var td1=document.createElement("td");
+        td1.textContent="3";
+        td1.height="40";
+        tr4.appendChild(td1);
+        var td2=document.createElement("td");
+        td2.textContent="10th";
+        tr4.appendChild(td2);
+        var td3=document.createElement("td");
+        td3.textContent="Pollocks School";
+        tr4.appendChild(td3);
+        var td4=document.createElement("td");
+        td4.textContent="9.7CGPA";
+        tr4.appendChild(td4);
+
+        var h22=document.createElement("h2");
+        h22.textContent="Skills";
+        section1.appendChild(h22);
+
+        var ul=document.createElement("ul");
+        section1.appendChild(ul);
+        var li1=document.createElement("li");
+        li1.textContent="C Programming";
+        ul.appendChild(li1);
+        var li2=document.createElement("li");
+        li2.textContent="C++ Programming";
+        ul.appendChild(li2);
+        var li3=document.createElement("li");
+        li3.textContent="Java";
+        ul.appendChild(li3);
+        var li4=document.createElement("li");
+        li4.textContent="Database Management System";
+        ul.appendChild(li4);
+        var li5=document.createElement("li");
+        li5.textContent="HTML,CSS";
+        ul.appendChild(li5);
+
+        var h23=document.createElement("h2");
+        h23.textContent="Hobbies";
+        section1.appendChild(h23);
+
+        var ul1=document.createElement("ul");
+        section1.appendChild(ul1);
+        var li1=document.createElement("li");
+        li1.textContent="Faux Calligraphy";
+        ul1.appendChild(li1);
+        var li2=document.createElement("li");
+        li2.textContent="Sketching";
+        ul1.appendChild(li2);
+        var li3=document.createElement("li");
+        li3.textContent="Listening Music";
+        ul1.appendChild(li3);
+        var li4=document.createElement("li");
+        li4.textContent="Reading Books";
+        ul1.appendChild(li4);
+</script>	
+</body>
+</html>
